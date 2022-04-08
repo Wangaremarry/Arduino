@@ -1,28 +1,28 @@
 // C++ code
 //
-int Red=2;
-int Amber=4;
-int Blue=7;
+int Red=1;
+int Green=2;
+int Yellow=0;
 
 void setup()
 {
   pinMode(Red, OUTPUT);
-  pinMode(Amber, OUTPUT);
-  pinMode(Blue, OUTPUT);
+  pinMode(Green, OUTPUT);
+  pinMode(Yellow, OUTPUT);
 }
 
 void loop()
 {
-  digitalWrite(Red, HIGH);
+  digitalWrite(1, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(Red, LOW);
+  digitalWrite(1, LOW);
   delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(Amber, HIGH);
+  digitalWrite(2, HIGH);
   delay(1000);
-  digitalWrite(Amber, LOW);
+  digitalWrite(2, LOW);
   delay(1000);
-  digitalWrite(Blue, HIGH);
+  digitalWrite(0, HIGH);
   delay(1000);
-  digitalWrite(Blue, LOW);
+  digitalWrite(0, LOW);
   delay(1000);
 }
